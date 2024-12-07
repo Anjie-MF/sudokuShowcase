@@ -13,7 +13,7 @@
 
 
 ## Overview
-This project was developed as part of my developer portfolio to showcase problem-solving, JavaScript, and user interface design skills. The project incorporates functionality such as modal dialog boxes, displayDate, intro welcome messages, and content blur effects—originally created as part of an earlier crossword puzzle project (feel free to ask me about that!).
+This project was developed as part of my developer portfolio to showcase my problem-solving, JavaScript, and user interface design skills. It incorporates functionality such as modal dialog boxes, displayDate, intro welcome messages, and content blur effects—originally created as part of an earlier crossword puzzle project (feel free to ask me about that!).
 
                                     💡💡Lessons Learned 💡💡
 
@@ -25,7 +25,7 @@ Starting with Foundations 📚📚
 
 Trial, Error, Debugging, and Problem-Solving 🤔🤔
 
-* Through trial and error, I developed two critical skills: debugging and problem-solving. Development isn’t just about memorization; it’s about actively engaging with problems. Writing a flowchart significantly improved my critical thinking and allowed me to approach problems methodically. This has already improved how I search for solutions when coding.
+* Through trial and error, I developed two critical skills: debugging and problem-solving. Development isn’t just about memorization but actively engaging with problems. Writing a flowchart significantly improved my critical thinking and allowed me to approach problems methodically. This has already improved how I search for solutions when coding.
 
 New Skills Learned 🎓🎓
 
@@ -39,7 +39,7 @@ This project taught me concepts and skills that independent study outside of cod
 
 * Creating a dynamic timer that pauses, resets, and starts
 
-Although I didn’t finish the crossword logic or fully implement out the Sudoku game, the knowledge and skills gained from this project have fundamentally changed the way I will approach future projects.
+Although I didn’t finish the crossword logic or fully implement the Sudoku game, the knowledge and skills gained from this project have fundamentally changed how I will approach future projects.
 
                               Key Takeaways, or TL;DR
 
@@ -55,7 +55,7 @@ This project represents a significant milestone in my journey as a developer
 
 ### Link
 
-- Live Site Link: [Add live site URL here](https://your-live-site-url.com)
+- Live Site Link: [Check Me Out!](https://anjie-mf.github.io/sudokuShowcase/))
 
 ## My process
 
