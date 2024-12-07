@@ -55,7 +55,7 @@ This project represents a significant milestone in my journey as a developer
 
 ### Link
 
-- Live Site Link: [Add live site URL here](https://your-live-site-url.com)
+- Live Site Link: [Check Me Out! ](https://anjie-mf.github.io/sudokuShowcase/)
 
 ## My process
 
