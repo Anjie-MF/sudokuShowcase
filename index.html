@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/106ba2589c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sudoku</title>
+</head>
+
+<body>
+    <main>
+        <div class="content-to-blur">
+            <!-- Information Bar contains date, timer, and model dialog box -->
+            <section class="info-bar">
+                <div class="displayDate">
+                    <p id="date"></p>
+                </div>
+                <div class="time-box">
+                    <p id="timer">00:00:00</p>
+                    <button onclick="pauseTimer()"><i class="fa-solid fa-pause"></i></button>
+                    <button onclick="startTimer()"><i class="fa-solid fa-play"></i></button>
+                    <button onclick="resetTimer()"><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+                <div id="howToPlayIcon"><i class="fa-solid fa-question"></i></div>
+                <!-- Instruction Modal -->
+                <div id="howToPlay" class="modal">
+                    <div class="htp-content">
+                        <span class="close">&times;</span>
+                        <h2>How to Play Sudoku</h2>
+                        <p>Here's how you can play the game:</p>
+                        <ol type="1">
+                            <li>Fill each row, column, and 3x3 with numbers 1-9.</li>
+                            <li>Each number must appear only once in each row, column, and grid.</li>
+                            <li>Click on each cell to input a number.</li>
+                        </ol>
+                        <p>Good luck!</p>
+                    </div>
+                </div>
+            </section>
+            <!--  ==========================================================================
+            GeeksforGeeks HTML for Grid Container
+            ==========================================================================  -->
+            <div class="container" id="container"></div>
+            <div class="buttonContainer">
+                <button id="solveButton">Solve</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+        <!-- ==========================================================================
+        GeeksforGeeks HTML for Grid Container 
+        ==========================================================================  -->
+        <!-- Sudoku Blurb -->
+        <section class="sudoku" id="sud-section">
+            <div class="blurb">
+                <h1>Hey, I'm Anjelica!</h1>
+                <p>Dive into the world of numbers and sharpen your mind with my engaging Sudoku puzzle!
+                    Ready to take on the challenge and achieve that satisfying “Aha!” moment?
+                </p>
+            </div>
+            <div class="options">
+                <button class="yes" onclick="closeBlurb()">Let's go</button>
+                <a href="https://hackertyper.com/" class="no">Maybe later</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+    min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+    scroll-margin-block: 5ex;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ---------------------Mobile Style-------------------------*/
+body {
+    font-family: "Merriweather", serif;
+    background-color: #F5FCFF;
+}
+
+.content-to-blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+/* Style for Sudoku Blurb */
+.sudoku {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px 15px 15px;
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    display: show;
+    border: 10px solid #D2E3FC;
+}
+
+.blurb h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.blurb p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0;
+    text-align: start;
+}
+
+.sudoku .options {
+    display: flex;
+    width: 100%;
+}
+
+.options button,
+.options a {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: #D2E3FC;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.options button:hover,
+.options a:hover {
+    transform: scale(0.96);
+}
+
+.options button.yes,
+.options a.no {
+    margin-right: 5px;
+}
+
+.options a.no {
+    margin-left: 5px;
+}
+
+/* Styles for Information Bar */
+.info-bar {
+    border: 1px solid #333;
+    background-color: #D2E3FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style for Display Date ---------- */
+.displayDate {
+    padding: 5px;
+    text-align: center;
+}
+
+.displayDate .p {
+    font-family: "Merriweather", serif;
+    font-size: 1 rem;
+}
+
+/* Style for Instruction Modal */
+#howToPlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.htp-content {
+    background-color: #D2E3FC;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.htp-content ol li {
+    text-align: start;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+           GeeksforGeeks CSS Grid Container
+   ========================================================================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.light-background {
+    background-color: #a9a9a9;
+}
+
+.dark-background {
+    background-color: #ebf3eb
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    margin-right: 10px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* ---------------------Tablet Styles------------------------- */
+@media only screen and (min-width: 768px) {
+    #container {
+        max-width: 900px;
+        height: 900px;
+    }
+
+    .cell {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    .cell {
+        font-size: 2.2rem;
+    }
+}
+
+/* ---------------------Desktop Styles------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    #container {
+        max-width: 1100px;
+        height: 1100px;
+    }
+
+    .cell {
+        width: 4vw;
+        height: 4vw;
+        font-size: 3rem;
+    }
+}
